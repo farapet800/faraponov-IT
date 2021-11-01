@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>формы в HTML5</title>
+    <title>Текстовые поля в HTML5</title>
 </head>
 <body>
-<form method="post" action="http://localhost:8080/login.php">
-  <input name="login"/>
-  <input type="submit" value="Войти" />
+<form>
+    <p><input type="text" name="UserName" placeholder="Введите имя" size="18"/></p>
+    <p><input type="text" name="UserPhone" placeholder="Введите номер телефона" size="18" maxlength="11" /></p>
+    <p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Отмена</button>
+    </p>
+
 </form>
 
 </body>
