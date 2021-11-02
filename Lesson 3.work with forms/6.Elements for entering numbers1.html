@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>числовое поле в HTML5</title>
+</head>
+<body>
+<form>
+    <p>
+        <label for="price">Цена: </label>
+        <input type="number" list="pricelist"
+               step="1000" min="3000" max="100000"  id="price" name="price"/>
+    </p>
+    <p>
+        <button type="submit">Отправить</button>
+    </p>
+</form>
+<datalist id="pricelist">
+    <option value="15000" />
+    <option value="20000" />
+    <option value="25000" />
+
+</datalist>
+
+</body>
+</html>
