@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascading styles css3</title>
+    <style>
+        a {font-size: 18px;}
+        .nav li a {color: red;}
+        #menu a {color: navy;}
+        .nav .menuItem {color: green;}
+        a.menuItem:not(.newsLink) {color: orange;}
+        div ul li a {color: gray; }
+    </style>
+</head>
+<body>
+<div id="menu">
+    <ul class="nav">
+        <li><a class="menuItem">Главная</a></li>
+        <li><a class="menuItem">Форум</a></li>
+        <li><a class="menuItem">Блог</a></li>
+        <li><a class="menuItem">О сайте</a></li>
+    </ul>
+</div>
+</body>
+</html>
