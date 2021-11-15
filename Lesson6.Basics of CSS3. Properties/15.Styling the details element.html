@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styling the details element</title>
+    <style>
+        details > summary {
+            padding: 5px;
+            background-color: #eee;
+            color: #333;
+            border: 1px #ccc solid;
+            cursor: pointer;
+            list-style-type: none;
+        }
+        details > div {
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+        details[open] >summary {
+            color: #eee;
+            background-color: #333;
+        }
+        summary:before {
+            content: "+";
+            margin: -5px 5px 0 0;
+        }
+
+        details[open] summary:before {
+            content: "-";
+        }
+    </style>
+</head>
+<body>
+<details>
+    <summary>Князь Андрей и Пьер в Богучарово</summary>
+    <div>Вокруг дома был рассажен молодой сад. Ограды и ворота были прочные и новые; под навесом
+        стояли две пожарные трубы и бочка, выкрашенная зеленою краской; дороги были прямые, мосты были крепкие с перилами.
+        На всем лежал отпечаток аккуратности и хозяйственности.</div>
+</details>
+</body>
+</html>
