@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Flexbox page layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html, body{
+            padding: 0;
+            margin: 0;
+            font-family: verdana, arial, sans-serif;
+        }
+        body{
+            color: #fff;
+            font-size: 1.1em;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        article{
+            background-color: #546e7a;
+            flex: 2 2 12em;
+            padding: 1em;
+        }
+        nav, aside{
+            flex: 1;
+            background-color: #455a64;
+        }
+        nav {
+            order:-1;
+        }
+        header , footer{
+            flex:0 0 5em;
+            background-color: #37474f;
+        }
+        @media screen and (min-width: 600px) {
+            body{
+                min-height: 100vh;
+            }
+            main{
+                flex-direction: row;
+                min-height: 100%;
+                flex: 1 1 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <p>Header</p>
+</header>
+<main>
+    <article>
+        <h1>Что такое Lorem Ipsum?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid cum cumque debitis ea exercitationem facilis libero minima necessitatibus nemo neque perspiciatis qui saepe tempora tempore temporibus ut veniam. Amet dolor eligendi exercitationem inventore rem. Alias aliquam assumenda ducimus eius eum fuga libero nostrum quibusdam. Adipisci at deleniti deserunt est et, itaque magnam modi molestiae nam nihil praesentium quaerat, repudiandae, sed totam vitae voluptate voluptatibus! Ab animi aperiam eligendi hic, magnam minus nobis possimus quae, quam quasi recusandae reiciendis, sapiente. Animi doloribus enim explicabo quod? Aperiam asperiores atque consequatur dicta dignissimos dolore eligendi esse eveniet excepturi exercitationem facere in laboriosam laborum minima minus, molestias natus nesciunt non obcaecati odit provident quo quos ratione sequi sint tempore temporibus ullam veniam veritatis voluptates! Atque eos laborum libero maiores molestias natus nemo, nesciunt odio officia quam quasi quisquam quo ratione sed temporibus ullam voluptatibus? A ad aliquid atque autem delectus dignissimos dolores, error, eum fuga molestiae mollitia nulla optio perspiciatis placeat quibusdam, quos sint tenetur ut vel voluptates. A architecto assumenda cumque deleniti dolore earum eveniet fuga, illum ipsum officiis quam sunt temporibus, tenetur! Animi, aperiam aspernatur assumenda cupiditate dolore dolores exercitationem incidunt, nesciunt possimus quae quaerat, quasi quia rem tempora tempore ut!</p>
+
+    </article>
+    <nav>
+        <p>Navigation</p>
+    </nav>
+    <aside>
+        <p>Sidebar</p>
+    </aside>
+</main>
+<footer>
+    <p>Footer</p>
+</footer>
+</body>
+</html>
