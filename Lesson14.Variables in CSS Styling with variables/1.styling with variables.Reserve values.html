@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styling with variables</title>
+    <style>
+        :root{
+            --text-color: #ff4757;
+            --text-size: 20px;
+            --reserved-color: #5352ed
+        }
+        div{
+            height: 35px;
+            font-family: Verdana;
+        }
+        #div1{
+            color: var(--text-color, var(--reserved-color));
+        }
+        #div2 {
+            color: var(--text-color, var(--reserved-color, red));
+        }
+        #div3 {
+            color: var(--text-color, #2ed573)
+        }
+    </style>
+</head>
+<body>
+<div id="div1">Первый блок.</div>
+<div id="div2">Второй блок.</div>
+<div id="div3">Третий блок.</div>
+</body>
+</html>

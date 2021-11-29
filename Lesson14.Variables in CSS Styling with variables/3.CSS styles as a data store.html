@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS styles as a data store</title>
+    <link rel="stylesheet" type="text/css" href="user.css" />
+    <style>
+        .user-name:after { content: var(--name);}
+        .user-age:after { content: var(--age);}
+        .user-email:after {content: var(--email);}
+        .user-address:after { content: var(--address);}
+    </style>
+</head>
+<body>
+<div class="user">
+    <h2 class="user-name">User</h2>
+    <p class="user-age">Age:</p>
+    <p class="user-email">Email:</p>
+    <p class="user-address">Address:</p>
+
+</div>
+</body>
+</html>

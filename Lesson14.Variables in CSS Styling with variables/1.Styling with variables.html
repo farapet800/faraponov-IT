@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styling with variables</title>
+    <style>
+        div{
+            --text-color:#ff4757;
+            --text-size:20px;
+            height: 40px;
+            font-family: Verdana;
+        }
+        #div1 {
+            font-size:var(--text-size);
+        }
+        #div2 {
+            color: var(--text-color);
+        }
+        #p1 {
+            color: var(--text-color);
+            font-size: var(--text-size);
+        }
+    </style>
+</head>
+<body>
+<div id="div1">Первый блок</div>
+<div id="div2">Второй блок</div>
+<div><p id="p1">Третий блок</p></div>
+</body>
+</html>
